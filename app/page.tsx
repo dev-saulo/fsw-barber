@@ -3,7 +3,6 @@ import Header from "./_components/header"
 import { SearchIcon } from "lucide-react"
 import { Button } from "./_components/ui/button"
 import Image from "next/image"
-import { Card, CardContent } from "./_components/ui/card"
 import { db } from "./_lib/prisma"
 import { quickSearchOptions } from "./_constants/search"
 import BarbershopItem from "./_components/barbershop-item"
@@ -83,16 +82,6 @@ const Home = async () => {
           ))}
         </div>
       </div>
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-6">
-            <p className="text-sm text-gray-400">
-              © 2024 Copyright
-              <span className="font-bold">Gorilla Dev 🦍</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   )
 }
