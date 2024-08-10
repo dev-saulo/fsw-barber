@@ -3,7 +3,7 @@ import { Card, CardContent } from "./ui/card"
 import Image from "next/image"
 import { Button } from "./ui/button"
 import { Badge } from "./ui/badge"
-import { Sparkles } from "lucide-react"
+import { StarsIcon } from "lucide-react"
 
 interface BarbershopItemProps {
   barbershop: Barbershop
@@ -26,7 +26,7 @@ const BarbershopItem = ({ barbershop }: BarbershopItemProps) => {
             className="absolute left-2 top-2 space-x-1"
             variant="secondary"
           >
-            <Sparkles size={12} className="fill-primary text-primary" />
+            <StarsIcon size={12} className="fill-primary text-primary" />
             <p className="text-xs font-semibold">5,0</p>
           </Badge>
         </div>
