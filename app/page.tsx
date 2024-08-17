@@ -1,12 +1,11 @@
-import { Input } from "./_components/ui/input"
 import Header from "./_components/header"
-import { SearchIcon } from "lucide-react"
 import { Button } from "./_components/ui/button"
 import Image from "next/image"
 import { db } from "./_lib/prisma"
 import { quickSearchOptions } from "./_constants/search"
 import BarbershopItem from "./_components/barbershop-item"
 import BookingItem from "./_components/booking-item"
+import Search from "./_components/search"
 
 // TODO: Receber agendamento como prop
 const Home = async () => {
@@ -29,11 +28,8 @@ const Home = async () => {
         <p>Sábado, 10 de agosto</p>
 
         {/*BUSCA*/}
-        <div className="mt-6 flex items-center gap-2">
-          <Input placeholder="Buscar" />
-          <Button size="icon">
-            <SearchIcon />
-          </Button>
+        <div className="mt-6">
+          <Search />
         </div>
 
         {/*BUSCA RAPIDA*/}
