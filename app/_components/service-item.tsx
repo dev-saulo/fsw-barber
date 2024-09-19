@@ -29,6 +29,7 @@ interface ServiceItemProps {
   barbershop: Pick<Barbershop, "name">
 }
 
+/*Horários disponíveis*/
 const TIME_LIST = [
   "08:00",
   "08:30",
